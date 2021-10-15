@@ -1,0 +1,75 @@
+@include xxlg-xxxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  @include intro1300;
+  @include help1300;
+  @include news1300;
+  @include gallery1300;
+  @include card1300;
+  @include extraNews1300;
+  @include education1300;
+  @include footer1300;
+}
+@include xlg-xxlg {
+  @include news1180;
+}
+@include lg-xlg {
+  h2 {
+    br {
+      display: none;
+    }
+  }
+  h3 {
+    br {
+      display: none;
+    }
+  }
+  h4 {
+    br {
+      display: none;
+    }
+  }
+  p {
+    br {
+      display: none;
+    }
+  }
+}
+@include md-lg {
+  @include intro840;
+  @include help840;
+  @include general840;
+  @include card840;
+  @include extraNews840;
+  @include education840;
+  @include footer840;
+}
+@include sm-md {
+  @include intro650;
+  @include gallery650;
+  @include help650;
+  @include card650;
+  @include extraNews650;
+  @include education650;
+  @include newsletter650;
+  @include difference650;
+  @include news650;
+}
+@include xsm-sm {
+  .auto__container {
+    padding: 0 15px;
+  }
+  @include intro380;
+  @include help380;
+  @include extraNews380;
+  @include gallery380;
+  @include news380;
+}
+@include xxsm-xsm {
+  .auto__container {
+    padding: 0 30px;
+  }
+  @include intro360;
+  @include help360;
+}

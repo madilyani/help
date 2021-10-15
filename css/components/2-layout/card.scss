@@ -1,0 +1,161 @@
+.card {
+  padding-top: 130px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    top: 0;
+    height: 130px;
+    left: 50%;
+    @include transformX;
+    background: $gray;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    border: 1px solid $gray;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    &-image {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+      }
+      img {
+        @include fullImage;
+      }
+    }
+    &-content {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 100px 70px;
+      margin-left: 50%;
+    }
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .button-secondary {
+    width: unset;
+    padding: 15.5px 24px;
+    max-width: 290px;
+    margin-top: 30px;
+  }
+  &.left {
+    .card {
+      &__inner {
+        &-image {
+          &::before {
+            background: linear-gradient(
+              270deg,
+              #211c18 0%,
+              rgba(33, 28, 24, 0) 100%
+            );
+          }
+        }
+      }
+    }
+  }
+  &.right {
+    .card {
+      &__inner {
+        &-content {
+          margin-left: 0;
+          margin-right: 50%;
+        }
+        &-image {
+          left: unset;
+          right: 0;
+          &::before {
+            background: linear-gradient(
+              270deg,
+              rgba(33, 28, 24, 0) 0%,
+              #211c18 100%
+            );
+          }
+        }
+      }
+    }
+  }
+}
+@mixin card1300 {
+  .card {
+    padding-top: 80px;
+    &::before {
+      height: 80px;
+    }
+    &__inner {
+      &-content {
+        padding: 50px 30px;
+      }
+    }
+  }
+}
+@mixin card840 {
+  .card {
+    padding-top: 40px;
+    &::before {
+      height: 40px;
+    }
+    &__inner {
+      &-image {
+        height: 100%;
+      }
+      &-content {
+        padding: 25px 20px;
+      }
+    }
+  }
+}
+@mixin card650 {
+  .card {
+    padding-top: 20px;
+    &::before {
+      height: 20px;
+    }
+    &__inner {
+      flex-direction: column;
+      -ms-flex-direction: column;
+      &-image {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 1;
+        &::before {
+          background: linear-gradient(
+            180deg,
+            rgba(33, 28, 24, 0.3) 0%,
+            #211c18 93.84%
+          ) !important;
+        }
+      }
+      &-content {
+        width: 100%;
+        padding: 40px 25px;
+        margin: 0;
+        box-sizing: border-box;
+        margin: 0 !important;
+        order: 2;
+      }
+    }
+  }
+}

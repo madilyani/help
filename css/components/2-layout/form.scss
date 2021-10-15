@@ -1,0 +1,44 @@
+.form {
+  width: 100%;
+  max-width: 410px;
+  &__inner {
+    &-header {
+      display: flex;
+      margin: 0 -5px;
+      margin-bottom: 10px;
+      .radio {
+        width: calc(33.3% - 10px);
+        margin: 0 5px;
+      }
+    }
+    &-body {
+      .input__outer {
+        margin-bottom: 10px;
+      }
+      .custom-select {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.input {
+  &__outer {
+    input {
+      width: 100%;
+      background: #ffffff;
+      /* Action Black 20% */
+      border: 1px solid #d3d2d1;
+      box-sizing: border-box;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 160%;
+      letter-spacing: 0.01em;
+      color: $black;
+      padding: 12px;
+      &::placeholder {
+        color: #d3d2d1;
+      }
+    }
+  }
+}

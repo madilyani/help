@@ -1,0 +1,80 @@
+.custom-select select {
+  display: none;
+}
+.custom-select {
+  position: relative;
+}
+.select-selected {
+  background-color: #fff;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  right: 10px;
+  width: 4px;
+  height: 4px;
+  z-index: 4;
+  border-bottom: 1px solid #868686;
+  border-right: 1px solid #868686;
+  @include transition;
+}
+.select-selected.select-arrow-active:after {
+  transform: translateY(-50%) rotate(225deg);
+}
+.select-selected.select-arrow-active {
+  border-bottom: none;
+  border: 4px 4px 0 0;
+}
+.select-selected {
+  background: $gray;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: $white;
+  cursor: pointer;
+  padding: 13px 16px;
+}
+.select-items div {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $black;
+  padding: 10px;
+  cursor: pointer;
+  @include transition;
+}
+.select-items {
+  position: absolute;
+  background-color: $white;
+  border: 1px solid $gray;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  cursor: pointer;
+  animation-name: select;
+  animation-duration: 0.3s;
+}
+.select-hide {
+  display: none;
+}
+.select-items div:hover,
+.same-as-selected {
+  background-color: $gray-2;
+}
+.select-items::-webkit-scrollbar {
+  width: 10px;
+}
+.select-items::-webkit-scrollbar-track {
+  background: #ededed;
+  border-radius: 10px;
+}
+.select-items::-webkit-scrollbar-thumb {
+  background: #aeaeae;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
