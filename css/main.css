@@ -278,6 +278,7 @@ p {
 .button-primary .material-icons {
   margin-right: 5px;
   font-size: 20px;
+  line-height: 16px;
   position: relative;
   z-index: 1;
 }
@@ -299,7 +300,7 @@ p {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,6 +690,9 @@ p {
   max-width: 290px;
   margin-top: 30px;
 }
+.card .button-secondary img {
+  margin-right: 12px;
+}
 .card.left .card__inner-image::before {
   background: -webkit-gradient(linear, right top, left top, from(#211c18), to(rgba(33, 28, 24, 0)));
   background: linear-gradient(270deg, #211c18 0%, rgba(33, 28, 24, 0) 100%);
@@ -821,6 +825,9 @@ p {
 }
 .intro .form {
   margin: 40px 0;
+}
+.intro .button-primary span {
+  margin-right: 8px;
 }
 
 .news {
@@ -1056,9 +1063,16 @@ p {
 .help .button-primary {
   max-width: 194px;
 }
+.help .button-primary span {
+  margin-right: 8px;
+}
 
 .general {
   padding: 74px 0 134px 0;
+}
+.general__inner {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .general__para {
   text-align: center;
@@ -1132,6 +1146,10 @@ p {
 }
 .extraNewsSlider__item-content-btns .button-secondary:last-child {
   margin-right: 0;
+}
+.extraNewsSlider__item-content-btns .button-secondary:hover {
+  background: #c80001;
+  opacity: 1;
 }
 .extraNewsSlider .slick-list {
   padding: 0 10% 0 0 !important;
