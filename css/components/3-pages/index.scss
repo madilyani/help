@@ -12,6 +12,11 @@
     position: absolute;
     top: 0;
     left: 0;
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
     img {
       @include fullImage;
     }
@@ -32,7 +37,7 @@
     margin: 40px 0;
   }
   .button-primary {
-    span {
+    .material-icons {
       margin-right: 8px;
     }
   }
@@ -111,6 +116,7 @@
         height: 380px;
         img {
           @include fullImage;
+          object-position: top center;
         }
       }
       &-content {
@@ -480,7 +486,7 @@
   }
   .button-primary {
     max-width: 194px;
-    span {
+    .material-icons {
       margin-right: 8px;
     }
   }
@@ -597,7 +603,7 @@
         left: 0;
         padding: 60px;
         width: calc(100% - 120px);
-        max-width: 455px;
+        max-width: 470px;
         &-title {
           margin-bottom: 16px;
         }
@@ -612,6 +618,13 @@
             margin-right: 10px;
             width: unset;
             padding: 17px 20px;
+            white-space: nowrap;
+            img {
+              margin-right: 10px;
+            }
+            span {
+              display: inline-block;
+            }
             &:last-child {
               margin-right: 0;
             }
@@ -625,6 +638,29 @@
     }
     .slick-list {
       padding: 0 10% 0 0 !important;
+    }
+    &__footer {
+      display: none;
+    }
+    &-left {
+      color: #d33334;
+      cursor: pointer;
+      span {
+        font-size: 60px;
+      }
+      &.slick-disabled {
+        color: $gray;
+      }
+    }
+    &-right {
+      color: #d33334;
+      cursor: pointer;
+      span {
+        font-size: 60px;
+      }
+      &.slick-disabled {
+        color: $gray;
+      }
     }
   }
 }
@@ -647,40 +683,50 @@
 @mixin extraNews840 {
   .extraNews {
     padding: 40px 0 80px 0;
+    .slick-list {
+      padding: 0 !important;
+    }
     &Slider {
+      &__outer {
+        padding: 0;
+      }
       &__item {
-        margin-right: 10px;
+        margin-right: 0;
         background: #4d4946;
         &-image {
           position: relative;
+          height: 600px;
+          img {
+            @include fullImage;
+          }
+          &::before {
+            background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0) 20%,
+              #000000 100%
+            );
+          }
         }
         &-content {
-          position: unset;
           max-width: unset;
-          padding: 15px;
-          width: calc(100% - 30px);
+          padding: 0 15px 40px 15px;
+          width: calc(80% - 30px);
           &-btns {
-            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            .button-secondary {
+              margin: 0 0 10px 0;
+              width: 100%;
+              max-width: 350px;
+            }
           }
         }
       }
-    }
-  }
-}
-@mixin extraNews650 {
-  .extraNews {
-    &Slider {
-      &__item {
-        margin-right: 10px;
-      }
-    }
-  }
-}
-@mixin extraNews380 {
-  .extraNews {
-    &Slider {
-      &__outer {
-        padding-left: 15px;
+      &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 20px;
       }
     }
   }
@@ -690,6 +736,19 @@
 // education start
 .education {
   position: relative;
+  &.right {
+    .education {
+      &__image {
+        left: 0;
+        right: unset;
+      }
+      &__content {
+        margin-left: 50%;
+        padding-right: 0;
+        padding-left: 30px;
+      }
+    }
+  }
   &__inner {
     display: flex;
     position: relative;
@@ -778,6 +837,16 @@
       &-icon {
         margin-bottom: 10px;
       }
+      &-target {
+        flex-direction: column;
+        -ms-flex-direction: column;
+        &-title {
+          width: 100%;
+        }
+        &-text {
+          width: 100%;
+        }
+      }
     }
     h2 {
       margin-bottom: 10px;
@@ -804,6 +873,14 @@
       width: 100%;
       padding: 40px 0;
       margin: 0;
+    }
+    &.right {
+      .education {
+        &__content {
+          margin-left: 0;
+          padding: 40px 0;
+        }
+      }
     }
   }
 }

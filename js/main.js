@@ -30,6 +30,8 @@ $(".extraNewsSlider").slick({
   speed: 1000,
   autoplaySpeed: 3000,
   slidesToShow: 2,
+  prevArrow: $(".extraNewsSlider-left"),
+  nextArrow: $(".extraNewsSlider-right"),
   focusOnSelect: true,
   pauseOnHover: false,
   responsive: [
@@ -38,6 +40,15 @@ $(".extraNewsSlider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 840,
+      settings: {
+        arrows: true,
+        slidesToShow: 1,
+        fade: true,
+        cssEase: "linear",
       },
     },
   ],
