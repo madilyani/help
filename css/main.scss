@@ -1,5 +1,7 @@
 @import "./fonts/proxima.css";
 @import "./fonts/urw.css";
+@import "./fonts/custom.css";
+
 // 1-main components
 @import "./components/1-main/variables.scss";
 @import "./components/1-main/mixin.scss";
@@ -15,6 +17,7 @@
 
 // 3-pages components
 @import "./components/3-pages/index.scss";
+@import "./components/3-pages/hero.scss";
 
 // responsive
 @import "./components/2-layout/responsive.scss";

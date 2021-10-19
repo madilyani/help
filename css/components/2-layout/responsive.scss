@@ -10,6 +10,9 @@
   @include extraNews1300;
   @include education1300;
   @include footer1300;
+  // round - 2 medias start
+  @include hero1300;
+  // round - 2 medias end
 }
 @include xlg-xxlg {
   @include news1180;
@@ -44,6 +47,9 @@
   @include extraNews840;
   @include education840;
   @include footer840;
+  // round - 2 medias start
+  @include hero840;
+  // round - 2 medias end
 }
 @include sm-md {
   @include intro650;
@@ -54,6 +60,9 @@
   @include newsletter650;
   @include difference650;
   @include news650;
+  // round - 2 medias start
+  @include hero650;
+  // round - 2 medias end
 }
 @include xsm-sm {
   .auto__container {
@@ -63,6 +72,9 @@
   @include help380;
   @include gallery380;
   @include news380;
+  // round - 2 medias start
+  @include hero380;
+  // round - 2 medias end
 }
 @include xxsm-xsm {
   .auto__container {

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Custom';
+    src: url('AFHCustomRegular.eot');
+    src: url('AFHCustomRegular.eot?#iefix') format('embedded-opentype'),
+        url('AFHCustomRegular.woff') format('woff'),
+        url('AFHCustomRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

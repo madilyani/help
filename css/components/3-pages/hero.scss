@@ -1,0 +1,181 @@
+.hero {
+  position: relative;
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(33, 28, 24, 0) 0%, #211c18 100%);
+    }
+    img {
+      @include fullImage;
+    }
+  }
+  &-big {
+    .hero {
+      &__inner {
+        padding: 270px 4.86% 200px 4.86%;
+        &-content {
+          max-width: 640px;
+        }
+      }
+    }
+    .title-primary {
+      margin-bottom: 30px;
+      br {
+        display: block;
+      }
+    }
+    p {
+      margin-bottom: 30px;
+    }
+    .button-secondary {
+      width: unset;
+      display: inline-block;
+      padding: 17px 20px;
+    }
+  }
+  &-sm {
+    .hero {
+      &__bg {
+        &::before {
+          background: linear-gradient(
+            180deg,
+            rgba(33, 28, 24, 0) 0%,
+            #211c18 100%
+          );
+        }
+      }
+      &__inner {
+        padding: 180px 4.86%;
+      }
+    }
+    &-desc {
+      position: relative;
+      padding: 80px 0;
+      &::before {
+        position: absolute;
+        top: -120px;
+        content: "";
+        left: 50%;
+        @include transformX;
+        width: 1px;
+        height: 160px;
+        background: $main;
+      }
+      &-text {
+        max-width: 640px;
+        margin: 0 auto;
+        p {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+      }
+    }
+    .title-secondary {
+      margin-bottom: 30px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+@mixin hero1300 {
+  .hero {
+    &-big {
+      .hero {
+        &__inner {
+          padding: 150px 30px 150px 30px;
+        }
+      }
+    }
+    &-sm {
+      .hero {
+        &__inner {
+          padding: 120px 30px 120px 30px;
+        }
+      }
+      &-desc {
+        &::before {
+          top: -60px;
+          height: 100px;
+        }
+        &-text {
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+}
+@mixin hero840 {
+  .hero {
+    &-big {
+      .title-primary {
+        font-size: 64px;
+        line-height: 50px;
+      }
+    }
+    &-sm {
+      .title-secondary {
+        font-size: 64px;
+        line-height: 50px;
+      }
+    }
+  }
+}
+@mixin hero650 {
+  .hero {
+    &-big {
+      .title-primary {
+        font-size: 42px;
+        line-height: 34px;
+      }
+    }
+    &-sm {
+      .title-secondary {
+        font-size: 42px;
+        line-height: 34px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+@mixin hero380 {
+  .hero {
+    &-big {
+      .hero {
+        &__inner {
+          padding: 150px 15px 150px 15px;
+        }
+      }
+    }
+    &-sm {
+      .hero {
+        &__inner {
+          padding: 80px 15px 80px 15px;
+        }
+      }
+      &-desc {
+        padding: 40px 0;
+        &::before {
+          top: -50px;
+          height: 80px;
+        }
+        &-text {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
