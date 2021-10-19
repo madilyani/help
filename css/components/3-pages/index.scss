@@ -605,7 +605,12 @@
         width: calc(100% - 120px);
         max-width: 470px;
         &-title {
-          margin-bottom: 16px;
+          font-family: $font-custom;
+          font-size: 44px;
+          line-height: 1;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: $white;
         }
         &-para {
           margin-bottom: 23px;
