@@ -12,6 +12,7 @@
   @include footer1300;
   // round - 2 medias start
   @include hero1300;
+  @include approach1300;
   // round - 2 medias end
 }
 @include xlg-xxlg {
@@ -38,7 +39,10 @@
       display: none;
     }
   }
+  // round - 2 medias start
   @include hero1024;
+  @include approach1024;
+  // round - 2 medias end
 }
 @include md-lg {
   @include intro840;
@@ -50,6 +54,7 @@
   @include footer840;
   // round - 2 medias start
   @include hero840;
+  @include approach840;
   // round - 2 medias end
 }
 @include sm-md {
@@ -64,6 +69,7 @@
   @include extraNews650;
   // round - 2 medias start
   @include hero650;
+  @include approach650;
   // round - 2 medias end
 }
 @include xsm-sm {

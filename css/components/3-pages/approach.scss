@@ -51,7 +51,7 @@
     color: $main;
     margin-bottom: 20px;
   }
-  &-white {
+  &-light {
     background: #e9e8e8;
     .approach {
       &__inner {
@@ -103,6 +103,115 @@
           font-size: 32px;
           line-height: 1;
           color: $main;
+        }
+      }
+    }
+  }
+}
+
+@mixin approach1300 {
+  .approach {
+    &__inner {
+      &-content {
+        padding: 50px 30px 50px 30px;
+      }
+    }
+    &__list {
+      &-item {
+        padding: 20px 20px 20px 0;
+      }
+    }
+    &-light {
+      .approach {
+        &__inner {
+          &-content {
+            padding: 50px 30px 50px 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin approach1024 {
+  .approach {
+    &__list {
+      &-item {
+        padding: 15px 15px 15px 0;
+        font-size: 14px;
+      }
+    }
+    h2 {
+      font-size: 38px;
+    }
+    &-light {
+      ul {
+        li {
+          .li__text {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin approach840 {
+  .approach {
+    &__inner {
+      flex-direction: column;
+      -ms-flex-direction: column;
+      &-content {
+        padding: 100px 50px 100px 50px;
+        width: 100%;
+        margin-right: 0;
+        order: 2;
+      }
+      &-image {
+        order: 1;
+        width: 100%;
+        position: relative;
+        top: unset;
+        left: unset;
+      }
+    }
+    &-light {
+      .approach {
+        &__inner {
+          &-image {
+            &::before {
+              background: linear-gradient(
+                180deg,
+                rgba(233, 232, 232, 0) 28.62%,
+                #e9e8e8 100%
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin approach650 {
+  .approach {
+    &__inner {
+      &-content {
+        padding: 50px 30px 50px 30px;
+      }
+    }
+    &__list {
+      flex-direction: column;
+      -ms-flex-direction: column;
+      &-column {
+        width: 100%;
+      }
+      &-item {
+        padding: 20px 20px 20px 0;
+        font-size: 16px;
+      }
+    }
+    &-light {
+      ul {
+        li {
+          width: 100%;
         }
       }
     }
