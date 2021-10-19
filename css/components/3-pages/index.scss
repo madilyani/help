@@ -725,8 +725,24 @@
       &__footer {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         margin-top: 20px;
+      }
+    }
+  }
+}
+@mixin extraNews650 {
+  .extraNews {
+    &Slider {
+      &__item {
+        &-content {
+          width: calc(100% - 30px);
+          &-btns {
+            .button-secondary {
+              max-width: unset;
+            }
+          }
+        }
       }
     }
   }

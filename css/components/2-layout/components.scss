@@ -22,6 +22,15 @@ h2 {
     text-transform: uppercase;
     color: $white;
   }
+  &.title-extra {
+    font-family: Proima$font-proxima;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 67px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: $white;
+  }
 }
 h3 {
   font-family: $font-proxima;

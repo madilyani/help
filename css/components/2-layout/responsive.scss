@@ -38,6 +38,7 @@
       display: none;
     }
   }
+  @include hero1024;
 }
 @include md-lg {
   @include intro840;
@@ -60,6 +61,7 @@
   @include newsletter650;
   @include difference650;
   @include news650;
+  @include extraNews650;
   // round - 2 medias start
   @include hero650;
   // round - 2 medias end
