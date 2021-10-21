@@ -7,23 +7,9 @@ h2 {
   text-transform: uppercase;
   color: $white;
   font-family: $font-proxima;
-  &.title-primary {
-    font-family: $font-custom;
-    font-size: 105px;
-    line-height: 80px;
-    text-transform: uppercase;
-    color: $white;
-  }
-  &.title-secondary {
-    font-family: "Custom";
-    font-size: 89px;
-    line-height: 80px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $white;
-  }
+
   &.title-extra {
-    font-family: Proima$font-proxima;
+    font-family: $font-proxima;
     font-style: normal;
     font-weight: 900;
     font-size: 67px;
@@ -31,6 +17,25 @@ h2 {
     text-transform: uppercase;
     color: $white;
   }
+}
+.title-primary {
+  font-family: "Custom";
+  font-size: 105px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: $white;
+  position: relative;
+  z-index: 1;
+}
+.title-secondary {
+  font-family: "Custom";
+  font-size: 89px;
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  position: relative;
+  z-index: 1;
 }
 h3 {
   font-family: $font-proxima;

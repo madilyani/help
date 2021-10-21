@@ -164,29 +164,35 @@ h2 {
   color: #ffffff;
   font-family: "Proxima";
 }
-h2.title-primary {
-  font-family: "Custom";
-  font-size: 105px;
-  line-height: 80px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-h2.title-secondary {
-  font-family: "Custom";
-  font-size: 89px;
-  line-height: 80px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
 h2.title-extra {
-  font-family: Proima "Proxima";
+  font-family: "Proxima";
   font-style: normal;
   font-weight: 900;
   font-size: 67px;
   line-height: 50px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.title-primary {
+  font-family: "Custom";
+  font-size: 105px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.title-secondary {
+  font-family: "Custom";
+  font-size: 89px;
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
 }
 
 h3 {
