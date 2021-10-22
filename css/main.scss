@@ -13,14 +13,20 @@
 @import "./components/2-layout/select.scss";
 @import "./components/2-layout/card.scss";
 @import "./components/2-layout/newsletter.scss";
-@import "./components/2-layout/difference.scss";
-
+@import "./components/2-layout/difference.scss"; 
+ 
 // 3-pages components
 @import "./components/3-pages/index.scss";
 @import "./components/3-pages/hero.scss";
+@import "./components/3-pages/grid.scss";   
 @import "./components/3-pages/approach.scss";
+@import "./components/3-pages/report.scss"; 
+@import "./components/3-pages/questions.scss"; 
+@import "./components/3-pages/cardSection.scss"; 
 
 // responsive
 @import "./components/2-layout/responsive.scss";
+
+// additional dependencies
 @import "./components/2-layout/slick.scss";
 @import "./components/2-layout/slick-theme.scss";

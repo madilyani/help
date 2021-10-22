@@ -14,9 +14,17 @@
   @include hero1300;
   @include approach1300;
   // round - 2 medias end
+  // round - 3 medias start
+  @include cardSection1300;
+  @include grid1300;
+  // round - 3 medias end
 }
 @include xlg-xxlg {
   @include news1180;
+  // round - 3 medias start
+  @include grid1180;
+  @include cardSection1180;
+  // round - 3 medias end
 }
 @include lg-xlg {
   h2 {
@@ -43,6 +51,11 @@
   @include hero1024;
   @include approach1024;
   // round - 2 medias end
+  // round - 3 medias start
+  @include grid1024;
+  @include report1024;
+  @include cardSection1024;
+  // round - 3 medias end
 }
 @include md-lg {
   @include intro840;
@@ -56,6 +69,10 @@
   @include hero840;
   @include approach840;
   // round - 2 medias end
+  // round - 3 medias start
+  @include grid840;
+  @include cardSection840;
+  // round - 3 medias end
 }
 @include sm-md {
   @include intro650;
@@ -71,11 +88,17 @@
   @include hero650;
   @include approach650;
   // round - 2 medias end
+  // round - 3 medias start
+  @include grid650;
+  @include report650;
+  @include questions650;
+  @include cardSection650;
+  // round - 3 medias end
 }
 @include xsm-sm {
   .auto__container {
     padding: 0 15px;
-  }
+  } 
   @include intro380;
   @include help380;
   @include gallery380;
