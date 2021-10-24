@@ -1,0 +1,69 @@
+.contact {
+  &__items {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    &-item {
+      margin: 0 10px;
+      width: calc(25% - 20px);
+
+      &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        height: 70px;
+        width: 100%;
+        svg {
+          max-height: 90%;
+          max-width: 90%;
+        }
+      }
+      h4 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      p {
+        text-align: center;
+        max-width: 200px;
+        margin: 0 auto;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.map {
+  width: 100%;
+  height: 700px;
+  iframe {
+    @include fullImage;
+  }
+}
+@mixin contact840 {
+  .contact {
+    &__items {
+      flex-wrap: wrap;
+      &-item {
+        width: calc(50% - 60px);
+        margin: 30px;
+      }
+    }
+  }
+}
+@mixin contact650 {
+  .contact {
+    &__items {
+      flex-wrap: wrap;
+      &-item {
+        width: 100%;
+        margin: 15px 0;
+      }
+    }
+  }
+  .map {
+    height: 400px;
+  }
+}

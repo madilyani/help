@@ -1,0 +1,94 @@
+.partner {
+  padding: 100px 0;
+  &__ship {
+    max-width: 680px;
+    margin: 0 auto;
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-card {
+      width: calc(33.3% - 40px);
+      margin: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__logos {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &-card {
+      width: calc(16.6% - 20px);
+      margin: 10px;
+      background: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 90%;
+        height: 90%;
+      }
+    }
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+@mixin partner1180 {
+  .partner {
+    &__logos {
+      &-card {
+        width: calc(20% - 20px);
+      }
+    }
+  }
+}
+@mixin partner1024 {
+  .partner {
+    &__logos {
+      padding: 0 25px;
+      &-card {
+        width: calc(25% - 20px);
+      }
+    }
+  }
+}
+@mixin partner840 {
+  .partner {
+    &__logos {
+      &-card {
+        width: calc(33.3% - 20px);
+      }
+    }
+  }
+}
+@mixin partner650 {
+  .partner {
+    padding: 50px 0;
+    h3 {
+      margin-bottom: 30px;
+    }
+    &__ship {
+      &-card {
+        width: calc(50% - 40px);
+      }
+    }
+    &__logos {
+      justify-content: unset;
+      &-card {
+        width: calc(50% - 20px);
+      }
+    }
+  }
+}

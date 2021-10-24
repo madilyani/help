@@ -1,0 +1,174 @@
+.blog {
+  &__inner {
+    margin: 0 auto;
+    max-width: 860px;
+    padding: 100px 0;
+  }
+  &__about {
+    padding: 80px 0;
+    border-bottom: 1px solid $black-80;
+    &:last-child {
+      border-bottom: none;
+    }
+    &-inner {
+      display: flex;
+      align-items: center;
+      &-image {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+        }
+      }
+      &-content {
+        width: 50%;
+        padding-left: 30px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  h4 {
+    margin-bottom: 10px;
+  }
+  h5 {
+    margin-bottom: 24px;
+    &.red {
+      color: $main;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+      }
+      &.neptun {
+        color: $lime;
+      }
+    }
+  }
+  h2 {
+    &.title-extra {
+      color: $main;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  &-team {
+    .blog {
+      &__about {
+        padding: 30px 0;
+        border: none;
+        &-inner {
+          &-image {
+            width: 34%;
+          }
+          &-content {
+            padding-left: 30px;
+            width: 66%;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin blog1300 {
+  .blog {
+    &__inner {
+      padding: 50px 0;
+    }
+    &__about {
+      padding: 40px 0;
+    }
+  }
+}
+@mixin blog1024 {
+  .blog {
+    &__inner {
+      padding: 50px 30px;
+    }
+    h5 {
+      margin-bottom: 10px;
+    }
+  }
+}
+@mixin blog840 {
+  .blog {
+    &__inner {
+      max-width: 450px;
+    }
+    &__about {
+      &-inner {
+        flex-direction: column;
+        &-image {
+          width: 100%;
+        }
+        &-content {
+          width: 100%;
+          padding: 20px 0 0 0;
+        }
+      }
+    }
+    &-team {
+      .blog {
+        &__inner {
+          max-width: unset;
+        }
+        &__about {
+          &-inner {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin blog650 {
+  .blog {
+    &__inner {
+      padding: 0 30px;
+    }
+    &-team {
+      h2 {
+        &.title-extra {
+          font-size: 54px;
+          line-height: 64px;
+          margin-bottom: 0;
+        }
+      }
+      .blog {
+        &__inner {
+          max-width: 450px;
+          padding: 40px 30px;
+        }
+        &__about {
+          &-inner {
+            flex-direction: column;
+            &-image {
+              width: 100%;
+            }
+            &-content {
+              width: 100%;
+              padding: 20px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin blog380 {
+  .blog {
+    &-team {
+      h2 {
+        &.title-extra {
+          font-size: 42px;
+          line-height: 52px;
+        }
+      }
+    }
+  }
+}

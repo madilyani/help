@@ -1,3 +1,4 @@
+// 1300px
 @include xxlg-xxxlg {
   .auto__container {
     padding: 0 30px;
@@ -18,14 +19,20 @@
   @include cardSection1300;
   @include grid1300;
   // round - 3 medias end
+  // round - 4 medias start
+  @include blog1300;
+  // round - 3 medias end
 }
+// 1180px
 @include xlg-xxlg {
   @include news1180;
   // round - 3 medias start
   @include grid1180;
   @include cardSection1180;
+  @include partner1180;
   // round - 3 medias end
 }
+// 1024px
 @include lg-xlg {
   h2 {
     br {
@@ -56,7 +63,13 @@
   @include report1024;
   @include cardSection1024;
   // round - 3 medias end
+  // round - 4 medias start
+  @include blog1024;
+  @include partner1024;
+
+  // round - 4 medias end
 }
+// 840px
 @include md-lg {
   @include intro840;
   @include help840;
@@ -73,7 +86,14 @@
   @include grid840;
   @include cardSection840;
   // round - 3 medias end
+  // round - 4 medias start
+  @include blog840;
+  @include partner840;
+  @include contact840;
+  @include stepCTA840;
+  // round - 4 medias end
 }
+// 650px
 @include sm-md {
   @include intro650;
   @include gallery650;
@@ -94,11 +114,18 @@
   @include questions650;
   @include cardSection650;
   // round - 3 medias end
+  // round - 4 medias start
+  @include blog650;
+  @include policy650;
+  @include partner650;
+  @include contact650;
+  // round - 4 medias end
 }
+// 380px
 @include xsm-sm {
   .auto__container {
     padding: 0 15px;
-  } 
+  }
   @include intro380;
   @include help380;
   @include gallery380;
@@ -106,7 +133,11 @@
   // round - 2 medias start
   @include hero380;
   // round - 2 medias end
+  // round - 4 medias start
+  @include blog380;
+  // round - 4 medias end
 }
+// 360px
 @include xxsm-xsm {
   .auto__container {
     padding: 0 30px;

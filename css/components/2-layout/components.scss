@@ -7,7 +7,7 @@ h2 {
   text-transform: uppercase;
   color: $white;
   font-family: $font-proxima;
-  &.h2--red{
+  &.h2--red {
     color: $red;
   }
 
@@ -48,7 +48,7 @@ h3 {
   line-height: 34px;
   text-transform: uppercase;
   color: $white;
-  &.h3--red{
+  &.h3--red {
     color: $red;
   }
 }
@@ -59,6 +59,16 @@ h4 {
   line-height: 25px;
   text-transform: capitalize;
   color: $white;
+}
+h5 {
+  font-family: $font-proxima;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
 }
 h6 {
   font-style: normal;
