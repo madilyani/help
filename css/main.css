@@ -315,6 +315,13 @@ p {
   font-family: "Proxima";
   position: relative;
   background: #211c18;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+}
+.button-primary:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .button-primary::before {
   position: absolute;
@@ -348,12 +355,6 @@ p {
 .button-primary span {
   position: relative;
   z-index: 1;
-}
-.button-primary:hover::before {
-  width: 0%;
-}
-.button-primary:hover::after {
-  width: 0%;
 }
 .button-secondary {
   cursor: pointer;
@@ -394,7 +395,8 @@ p {
   z-index: 1;
 }
 .button-secondary:hover {
-  opacity: 0.8;
+  background: #c80001;
+  color: #ffffff !important;
 }
 
 .footer__inner {
@@ -760,6 +762,10 @@ p {
 }
 .card .button-secondary img {
   margin-right: 12px;
+}
+.card .button-secondary:hover {
+  background: unset;
+  opacity: 0.8;
 }
 .card.left .card__inner-image::before {
   background: -webkit-gradient(linear, right top, left top, from(#211c18), to(rgba(33, 28, 24, 0)));
@@ -1732,6 +1738,10 @@ p {
   width: unset;
   border-color: #E8C9AA;
 }
+.grid__inner-footer .button-secondary:hover {
+  background: unset;
+  opacity: 0.8;
+}
 .grid__inner-footer .button-secondary img {
   padding-bottom: 1px;
 }
@@ -1761,6 +1771,10 @@ p {
   width: -moz-fit-content;
   width: fit-content;
   margin: 30px auto 0 auto;
+}
+.grid__item .button-secondary:hover {
+  background: unset;
+  opacity: 0.8;
 }
 .grid__item .button-secondary img {
   padding-bottom: 1px;

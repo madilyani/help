@@ -138,6 +138,10 @@ p {
     font-family: $font-proxima;
     position: relative;
     background: $black;
+    @include transition;
+    &:hover {
+      transform: scale(1.1);
+    }
     &::before {
       position: absolute;
       left: 0;
@@ -167,12 +171,12 @@ p {
       position: relative;
       z-index: 1;
     }
-    &:hover::before {
-      width: 0%;
-    }
-    &:hover::after {
-      width: 0%;
-    }
+    // &:hover::before {
+    //   width: 0%;
+    // }
+    // &:hover::after {
+    //   width: 0%;
+    // }
   }
   &-secondary {
     cursor: pointer;
@@ -204,7 +208,8 @@ p {
       z-index: 1;
     }
     &:hover {
-      opacity: 0.8;
+      background: $main;
+      color: $white !important;
     }
   }
 }

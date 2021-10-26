@@ -63,6 +63,10 @@
     img {
       margin-right: 12px;
     }
+    &:hover {
+      background: unset;
+      opacity: 0.8;
+    }
   }
   &.left {
     .card {
