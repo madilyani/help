@@ -25,7 +25,9 @@
   &-big {
     .hero {
       &__inner {
-        padding: 270px 4.86% 200px 4.86%;
+        padding: 270px 0 200px 0;
+        max-width: 1340px;
+        margin: 0 auto;
         &-content {
           max-width: 640px;
         }
