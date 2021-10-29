@@ -594,7 +594,7 @@
                         </div>
                         <div class="donate__inner-footer">
                             <div class="check">
-                                <input type="checkbox">
+                                <input type="checkbox" name="donateCheck">
                                 <label for="">
                                     I'd like to receive occasional SMS updates from Syria Relief
                                 </label>
@@ -723,7 +723,7 @@
         $(function () {
             $('#submits').attr('disabled', true);
             $('#initial_3').change(function () {
-                if ($('#initial_1').val() != '' && $('#relative').val() != '' && $('#initial_3').val() != '' && $("input[name='captcha']").is(":checked") == false) {
+                if ($('#initial_1').val() != '' && $('#relative').val() != '' && $('#initial_3').val() != '' && $("input[name='donateCheck']").is(":checked") == false && $("input[name='captcha']").is(":checked") == false) {
                     $('#submits').attr('disabled', false);
                 } else {
                     $('#submits').attr('disabled', true);
