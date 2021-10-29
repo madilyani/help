@@ -1,0 +1,231 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $white;
+  z-index: 1000;
+  &.black {
+    background: rgba($color: $black, $alpha: 0.7);
+    .nav {
+      &__inner {
+        &-drop {
+          &-btn {
+            color: $white;
+          }
+          &-content {
+            background: $black;
+            &-link {
+              &-btn {
+                background: $black;
+                color: $white;
+                &:hover {
+                  background: $white;
+                  color: $black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .header {
+      &__inner {
+        &-logo {
+          .logoBlack {
+            display: none;
+          }
+          .logoWhite {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  &__inner {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-logo {
+      width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+      }
+
+      .logoBlack {
+        display: block;
+      }
+      .logoWhite {
+        display: none;
+      }
+    }
+  }
+  &.sticky {
+    position: fixed;
+    animation: sticky 0.5s ease-in-out;
+    background: $white;
+    .header {
+      &__inner {
+        &-logo {
+          .logoBlack {
+            display: block;
+          }
+          .logoWhite {
+            display: none;
+          }
+        }
+      }
+    }
+    .nav {
+      &__inner {
+        &-drop {
+          padding: 30px 15px;
+          &-btn {
+            color: $black;
+          }
+          &-content {
+            background: $black;
+            &-link {
+              &-btn {
+                background: $white;
+                color: $black;
+                &:hover {
+                  background: $black;
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .burger {
+    display: none;
+  }
+}
+@keyframes sticky {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@mixin header1024 {
+  .header {
+    padding: 20px 0;
+    &__inner {
+      &-logo {
+        width: 80px;
+      }
+    }
+    &.black {
+      background: $white;
+
+      .nav {
+        &__inner {
+          &-drop {
+            &-btn {
+              color: $black;
+            }
+            &-content {
+              background: unset;
+              &-link {
+                &-btn {
+                  background: unset;
+                  color: $black;
+                  &:hover {
+                    background: unset;
+                    color: $black;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .header {
+        &__inner {
+          &-logo {
+            .logoBlack {
+              display: block;
+            }
+            .logoWhite {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &.sticky {
+      .nav {
+        &__inner {
+          &-drop {
+            padding: 20px 0 10px 0;
+            &-content {
+              background: unset;
+            }
+          }
+        }
+      }
+    }
+    .burger {
+      display: block;
+    }
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    &::before {
+      top: 20%;
+      width: calc(100% - 0.4rem);
+      height: 4px;
+      background-color: $black;
+      border-radius: 0.125rem;
+      transition: all 0.3s ease;
+      content: "";
+      position: absolute;
+      left: 50%;
+      @include transformX;
+    }
+
+    &::after {
+      bottom: 20%;
+      width: calc(100% - 0.4rem);
+      height: 4px;
+      background-color: $black;
+      border-radius: 0.125rem;
+      transition: all 0.3s ease;
+      content: "";
+      position: absolute;
+      left: 50%;
+      @include transformX;
+    }
+
+    &.active {
+      &::before {
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%) rotate(45deg);
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &::after {
+        bottom: 50%;
+        -webkit-transform: translate(-50%, 50%) rotate(-45deg);
+        transform: translate(-50%, 50%) rotate(-45deg);
+      }
+    }
+  }
+}

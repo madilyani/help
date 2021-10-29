@@ -3,7 +3,34 @@
 }
 .custom-select {
   position: relative;
+  &.red {
+    margin: 0 10px;
+    .select-items {
+      top: unset;
+      bottom: 100%;
+      background: $white;
+      border: none;
+      div {
+        border-bottom: 1px solid #d3d2d1;
+        padding: 12px 23px;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.01em;
+        color: $black;
+        &:hover {
+          background: $main;
+          color: $white;
+        }
+      }
+    }
+    .select-selected {
+      background: $white;
+      color: $black;
+      padding: 12px 23px;
+    }
+  }
 }
+
 .select-selected {
   background-color: #fff;
 }

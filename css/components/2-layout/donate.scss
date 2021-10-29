@@ -1,0 +1,162 @@
+.donate {
+  &__inner {
+    max-width: 640px;
+    margin: 0 auto;
+    &-row {
+      display: flex;
+      align-items: center;
+      margin: 25px 0 40px 0;
+    }
+    &-column {
+      margin: 0 20px 0 0;
+      .select-selected {
+        background: $white;
+        color: $black;
+        border: 1px solid #d3d2d1;
+      }
+      .datalist__outer {
+        margin-bottom: 0;
+      }
+      &:nth-child(1) {
+        width: 90px;
+      }
+      &:nth-child(2) {
+        width: calc(50% - 45px);
+      }
+      &:nth-child(3) {
+        width: calc(50% - 45px);
+        margin-right: 0;
+      }
+    }
+    &-footer {
+      margin-top: 40px;
+    }
+    &-captcha {
+      margin-top: 40px;
+      background: #fbfbfb;
+      padding: 24px;
+      p {
+        margin-bottom: 24px;
+      }
+      &-image {
+        width: 175px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &-info {
+      h5 {
+        color: $black;
+        font-weight: 900;
+        font-family: $font-urw;
+        text-transform: unset;
+        margin-bottom: 18px;
+      }
+      p {
+        margin-bottom: 18px;
+        a {
+          color: $main;
+        }
+      }
+      &-row {
+        display: flex;
+        margin-bottom: 4px;
+        &.mr {
+          margin-bottom: 18px;
+        }
+        p {
+          margin: 0;
+          &:first-child {
+            width: 30%;
+          }
+          &:last-child {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+  &__radio {
+    display: flex;
+    margin: 0 -10px 12px -10px;
+    .radio {
+      margin: 0 10px;
+      width: calc(50% - 20px); /* Monthly */
+      label {
+        color: #d3d2d1;
+        border: 1px solid #d3d2d1;
+      }
+    }
+  }
+  .button-primary {
+    padding: 21px 0;
+    font-size: 28px;
+    line-height: 1;
+    margin: 40px 0;
+    &:disabled {
+      color: $white;
+      &::before {
+        background: #d4d4d4;
+      }
+      &::after {
+        background: #d4d4d4;
+      }
+    }
+    .material-icons {
+      font-size: 28px;
+      margin-right: 14px;
+      line-height: 1;
+      margin-top: -4px;
+    }
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+@mixin donate650 {
+  .donate {
+    &__inner {
+      &-row {
+        flex-direction: column;
+      }
+      &-column {
+        &:nth-child(1) {
+          margin: 0 0 12px 0;
+          width: 100%;
+        }
+        &:nth-child(2) {
+          width: 100%;
+          margin: 0 0 12px 0;
+        }
+        &:nth-child(3) {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+    .button-primary {
+      font-size: 18px;
+      line-height: 1;
+      .material-icons {
+        font-size: 16px;
+        margin-right: 8px;
+        margin-top: -2px;
+      }
+    }
+  }
+  .datalist__outer-row {
+    flex-direction: column;
+    .datalist__outer {
+      width: 100%;
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

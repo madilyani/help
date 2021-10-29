@@ -1,8 +1,17 @@
 .footer {
+  &.black {
+    background: $black;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
     padding: 40px 0 90px 0;
+    &-title {
+      font-size: 24px;
+      line-height: 20px;
+      font-family: $font-custom;
+      color: #a6a4a3;
+    }
     &-logo {
       width: 218px;
       display: flex;

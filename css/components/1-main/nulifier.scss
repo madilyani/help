@@ -65,10 +65,11 @@ body {
   background: $black;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
+  &.white {
+    background: $white;
+  }
 }
-body.active {
-  overflow: hidden;
-}
+
 a {
   text-decoration: none;
   cursor: pointer;

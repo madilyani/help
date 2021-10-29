@@ -1,0 +1,151 @@
+.quick {
+  position: fixed;
+  bottom: -400px;
+  left: 0;
+  width: 100%;
+  background: #e9e8e8;
+  &__inner {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    &-logo {
+      display: flex;
+      align-items: center;
+      font-family: $font-proxima;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #211c18;
+      width: 25%;
+      img {
+        margin-right: 35px;
+      }
+    }
+  }
+  &.sticky {
+    animation: sticky 0.5s ease-in-out;
+    bottom: 0;
+  }
+  .button-primary {
+    padding: 15px 0;
+    width: unset;
+    margin-left: 20px;
+    margin: 0 10px;
+    width: calc(16% - 20px);
+  }
+  .custom-select {
+    &.red {
+      width: calc(17% - 20px);
+      &.long {
+        width: calc(25% - 20px);
+      }
+    }
+  }
+  .input__outer {
+    margin: 0 10px;
+    input {
+      padding: 12px 23px;
+    }
+  }
+}
+@mixin quick1300 {
+  .quick {
+    &__inner {
+      &-logo {
+        width: 200px;
+        font-size: 20px;
+        line-height: 1;
+        img {
+          width: 25px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+@mixin quick1180 {
+  .quick {
+    &__inner {
+      flex-wrap: wrap;
+      padding-bottom: 15px;
+      &-logo {
+        width: 100%;
+        justify-content: center;
+        padding: 15px 0;
+        img {
+          display: none;
+        }
+      }
+    }
+    .custom-select {
+      margin: 0 5px;
+      &.red {
+        width: calc(25% - 10px);
+        &.long {
+          width: calc(25% - 10px);
+        }
+      }
+    }
+    .button-primary {
+      width: calc(25% - 10px);
+      margin: 0 5px;
+    }
+    .input__outer {
+      width: calc(25% - 10px);
+      margin: 0 5px;
+    }
+  }
+}
+@mixin quick840 {
+  .quick {
+    &__inner {
+      &-logo {
+        padding: 15px 0 5px 0;
+      }
+    }
+    .custom-select {
+      margin: 5px;
+      &.red {
+        width: calc(50% - 10px);
+        &.long {
+          width: calc(50% - 10px);
+        }
+      }
+      .select-selected {
+        padding: 12px 12px;
+        font-size: 12px;
+        line-height: 1;
+      }
+      .select-items {
+        div {
+          padding: 12px 12px;
+          font-size: 12px;
+          line-height: 1;
+        }
+      }
+    }
+    .button-primary {
+      width: calc(50% - 10px);
+      margin: 5px;
+      padding: 12px 12px;
+      font-size: 12px;
+      line-height: 1;
+      .material-icons {
+        font-size: 12px;
+      }
+    }
+    .input__outer {
+      width: calc(50% - 10px);
+      margin: 5px;
+      input {
+        padding: 12px 12px;
+        font-size: 12px;
+        line-height: 1;
+      }
+    }
+  }
+}

@@ -23,6 +23,10 @@
   // round - 4 medias start
   @include blog1300;
   // round - 3 medias end
+  // round - 5 medias start
+  @include donation1300;
+  @include quick1300;
+  // round - 5 medias end
 }
 // 1180px
 @include xlg-xxlg {
@@ -32,6 +36,10 @@
   @include cardSection1180;
   @include partner1180;
   // round - 3 medias end
+  // round - 5 medias start
+  @include donation1180;
+  @include quick1180;
+  // round - 5 medias end
 }
 // 1024px
 @include lg-xlg {
@@ -70,6 +78,11 @@
   @include partner1024;
 
   // round - 4 medias end
+  // round - 5 medias start
+  @include donation1024;
+  @include nav1024;
+  @include header1024;
+  // round - 5 medias end
 }
 // 840px
 @include md-lg {
@@ -94,6 +107,9 @@
   @include contact840;
   @include stepCTA840;
   // round - 4 medias end
+  // round - 5 medias start
+  @include quick840;
+  // round - 5 medias end
 }
 // 650px
 @include sm-md {
@@ -122,6 +138,11 @@
   @include partner650;
   @include contact650;
   // round - 4 medias end
+  // round - 5 medias start
+  @include donation650;
+  @include donate650;
+  @include nav650;
+  // round - 5 medias end
 }
 // 380px
 @include xsm-sm {
