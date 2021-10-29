@@ -26,18 +26,7 @@ menuBtn.onclick = function () {
   menuBtn.classList.toggle("active");
   body.classList.toggle("active");
 };
-var basket = document.getElementById("basket");
-var basketBtn = document.getElementById("basketBtn");
-var basketClose = document.getElementById("basketClose");
-var body = document.body;
-basketBtn.onclick = function () {
-  basket.classList.toggle("active");
-  body.classList.toggle("active");
-};
-basketClose.onclick = function () {
-  basket.classList.remove("active");
-  body.classList.remove("active");
-};
+
 window.onclick = function (event) {
   if (event.target == menu) {
     menu.classList.remove("active");

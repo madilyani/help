@@ -617,7 +617,19 @@
                         </div>
                     </li>
                 </ul>
+                <div class="basket__inner-body-footer">
+                    <h5>
+                        Total
+                    </h5>
+                    <h5>
+                        £25.00 + £10 / month
+                    </h5>
+                </div>
+                <a href="" class="button-primary">
+                    <span>Checkout</span>
+                </a>
             </div>
+
         </div>
     </div>
     <!-- basket end
@@ -627,8 +639,18 @@
     <script src="../js/customSelect.js"></script>
     <script src="../js/sticky.js"></script>
     <script>
-
-
+        var basket = document.getElementById("basket");
+        var basketBtn = document.getElementById("basketBtn");
+        var basketClose = document.getElementById("basketClose");
+        var body = document.body;
+        basketBtn.onclick = function () {
+            basket.classList.toggle("active");
+            body.classList.toggle("active");
+        };
+        basketClose.onclick = function () {
+            basket.classList.remove("active");
+            body.classList.remove("active");
+        };
     </script>
 </body>
 
