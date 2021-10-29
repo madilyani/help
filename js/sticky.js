@@ -10,9 +10,6 @@ if (header) {
       header.classList.remove("sticky");
       quick.classList.remove("sticky");
     }
-    if (window.innerHeight + window.scrollY > document.body.offsetHeight) {
-      quick.classList.remove("sticky");
-    }
   }
   window.onscroll = function () {
     scrollFunc();
